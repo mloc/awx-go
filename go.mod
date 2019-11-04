@@ -1,4 +1,4 @@
-module github.com/Colstuwjx/awx-go
+module github.com/mloc/awx-go
 
 go 1.12
 
