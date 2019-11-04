@@ -112,7 +112,7 @@ func TestProjectUpdateGet(t *testing.T) {
 
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 
 				ExtraCredentials: []interface{}{},

@@ -140,8 +140,14 @@ type UserCapabilities struct {
 
 // Labels represents the awx api labels.
 type Labels struct {
-	Count   int           `json:"count"`
-	Results []interface{} `json:"results"`
+	Count   int     `json:"count"`
+	Results []Label `json:"results"`
+}
+
+// Label represents an awx api label.
+type Label struct {
+	ID   int    `json:"id"`
+	Name string `json:"name"`
 }
 
 // Summary represents the awx api summary fields.

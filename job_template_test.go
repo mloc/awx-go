@@ -24,15 +24,15 @@ func TestListJobTemplates(t *testing.T) {
 					NotificationTemplatesError:   "/api/v2/job_templates/5/notification_templates_error/",
 					NotificationTemplatesSuccess: "/api/v2/job_templates/5/notification_templates_success/",
 					NotificationTemplatesAny:     "/api/v2/job_templates/5/notification_templates_any/",
-					Jobs:           "/api/v2/job_templates/5/jobs/",
-					ObjectRoles:    "/api/v2/job_templates/5/object_roles/",
-					AccessList:     "/api/v2/job_templates/5/access_list/",
-					Launch:         "/api/v2/job_templates/5/launch/",
-					InstanceGroups: "/api/v2/job_templates/5/instance_groups/",
-					Schedules:      "/api/v2/job_templates/5/schedules/",
-					Copy:           "/api/v2/job_templates/5/copy/",
-					ActivityStream: "/api/v2/job_templates/5/activity_stream/",
-					SurveySpec:     "/api/v2/job_templates/5/survey_spec/",
+					Jobs:                         "/api/v2/job_templates/5/jobs/",
+					ObjectRoles:                  "/api/v2/job_templates/5/object_roles/",
+					AccessList:                   "/api/v2/job_templates/5/access_list/",
+					Launch:                       "/api/v2/job_templates/5/launch/",
+					InstanceGroups:               "/api/v2/job_templates/5/instance_groups/",
+					Schedules:                    "/api/v2/job_templates/5/schedules/",
+					Copy:                         "/api/v2/job_templates/5/copy/",
+					ActivityStream:               "/api/v2/job_templates/5/activity_stream/",
+					SurveySpec:                   "/api/v2/job_templates/5/survey_spec/",
 				},
 				SummaryFields: &Summary{
 					Inventory: &Inventory{
@@ -103,7 +103,7 @@ func TestListJobTemplates(t *testing.T) {
 
 					Labels: &Labels{
 						Count:   0,
-						Results: []interface{}{},
+						Results: []Label{},
 					},
 
 					RecentJobs: []interface{}{},
@@ -279,7 +279,7 @@ func TestLauchJob(t *testing.T) {
 
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 
 				ExtraCredentials: []interface{}{},
@@ -386,15 +386,15 @@ func TestCreateJobTemplate(t *testing.T) {
 				NotificationTemplatesError:   "/api/v2/job_templates/5/notification_templates_error/",
 				NotificationTemplatesSuccess: "/api/v2/job_templates/5/notification_templates_success/",
 				NotificationTemplatesAny:     "/api/v2/job_templates/5/notification_templates_any/",
-				Jobs:           "/api/v2/job_templates/5/jobs/",
-				ObjectRoles:    "/api/v2/job_templates/5/object_roles/",
-				AccessList:     "/api/v2/job_templates/5/access_list/",
-				Launch:         "/api/v2/job_templates/5/launch/",
-				InstanceGroups: "/api/v2/job_templates/5/instance_groups/",
-				Schedules:      "/api/v2/job_templates/5/schedules/",
-				Copy:           "/api/v2/job_templates/5/copy/",
-				ActivityStream: "/api/v2/job_templates/5/activity_stream/",
-				SurveySpec:     "/api/v2/job_templates/5/survey_spec/",
+				Jobs:                         "/api/v2/job_templates/5/jobs/",
+				ObjectRoles:                  "/api/v2/job_templates/5/object_roles/",
+				AccessList:                   "/api/v2/job_templates/5/access_list/",
+				Launch:                       "/api/v2/job_templates/5/launch/",
+				InstanceGroups:               "/api/v2/job_templates/5/instance_groups/",
+				Schedules:                    "/api/v2/job_templates/5/schedules/",
+				Copy:                         "/api/v2/job_templates/5/copy/",
+				ActivityStream:               "/api/v2/job_templates/5/activity_stream/",
+				SurveySpec:                   "/api/v2/job_templates/5/survey_spec/",
 			},
 			SummaryFields: &Summary{
 				Inventory: &Inventory{
@@ -457,7 +457,7 @@ func TestCreateJobTemplate(t *testing.T) {
 				},
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 				RecentJobs: []interface{}{},
 				Credentials: []Credential{
@@ -549,15 +549,15 @@ func TestUpdateJobTemplate(t *testing.T) {
 				NotificationTemplatesError:   "/api/v2/job_templates/5/notification_templates_error/",
 				NotificationTemplatesSuccess: "/api/v2/job_templates/5/notification_templates_success/",
 				NotificationTemplatesAny:     "/api/v2/job_templates/5/notification_templates_any/",
-				Jobs:           "/api/v2/job_templates/5/jobs/",
-				ObjectRoles:    "/api/v2/job_templates/5/object_roles/",
-				AccessList:     "/api/v2/job_templates/5/access_list/",
-				Launch:         "/api/v2/job_templates/5/launch/",
-				InstanceGroups: "/api/v2/job_templates/5/instance_groups/",
-				Schedules:      "/api/v2/job_templates/5/schedules/",
-				Copy:           "/api/v2/job_templates/5/copy/",
-				ActivityStream: "/api/v2/job_templates/5/activity_stream/",
-				SurveySpec:     "/api/v2/job_templates/5/survey_spec/",
+				Jobs:                         "/api/v2/job_templates/5/jobs/",
+				ObjectRoles:                  "/api/v2/job_templates/5/object_roles/",
+				AccessList:                   "/api/v2/job_templates/5/access_list/",
+				Launch:                       "/api/v2/job_templates/5/launch/",
+				InstanceGroups:               "/api/v2/job_templates/5/instance_groups/",
+				Schedules:                    "/api/v2/job_templates/5/schedules/",
+				Copy:                         "/api/v2/job_templates/5/copy/",
+				ActivityStream:               "/api/v2/job_templates/5/activity_stream/",
+				SurveySpec:                   "/api/v2/job_templates/5/survey_spec/",
 			},
 			SummaryFields: &Summary{
 				Inventory: &Inventory{
@@ -620,7 +620,7 @@ func TestUpdateJobTemplate(t *testing.T) {
 				},
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 				RecentJobs: []interface{}{},
 				Credentials: []Credential{

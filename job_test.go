@@ -95,7 +95,7 @@ func TestGetJob(t *testing.T) {
 
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 
 				ExtraCredentials: []interface{}{},
@@ -298,7 +298,7 @@ func TestRelaunchJob(t *testing.T) {
 
 				Labels: &Labels{
 					Count:   0,
-					Results: []interface{}{},
+					Results: []Label{},
 				},
 
 				ExtraCredentials: []interface{}{},
